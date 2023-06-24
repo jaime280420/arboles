@@ -13,25 +13,24 @@ public class Arbol implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_arbol")
-    private Long id_arbol;
+    @Column(name = "idArbol")
+    private Long idArbol;
     private String descripcion;
-    private String nombre_comun;
-    private String años_vida;
+    private String nombreComun;
+    private String añosVida;
     private String rutaImagen;
     private boolean activo;
 
     public Arbol() {
     }
 
-    public Arbol(String descripcion, String nombre_comun, String años_vida, String rutaImagen, boolean activo) {
+    public Arbol(String descripcion, String nombreComun, String añosvida, String rutaImagen, boolean activo) {
         this.descripcion = descripcion;
-        this.nombre_comun = nombre_comun;
-        this.años_vida = años_vida;
+        this.nombreComun = nombreComun;
+        this.añosVida = añosVida;
         this.rutaImagen = rutaImagen;
         this.activo = activo;
 
     }
 
-    
 }
